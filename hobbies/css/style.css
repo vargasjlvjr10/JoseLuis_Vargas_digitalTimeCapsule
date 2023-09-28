@@ -1,4 +1,3 @@
-
 body, h1, h2, p, ul, li {
     margin: 0;
     padding: 0;
@@ -67,23 +66,75 @@ nav a:hover {
 
 .photos {
     display: flex;
-    flex-wrap: wrap; 
     justify-content: center;
     align-items: center;
     margin-top: 40px;
     margin-bottom: 40px;
+    flex-wrap: wrap; /* Allow photos to wrap to the next line */
 }
 
-.photos img {
-    flex: 0 0 calc(33.33% - 60px); 
-    max-width: 33.33%; 
-    height: auto;
-    border: 3px solid #8CB03E;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-    transition: transform 0.3s ease-in-out; 
-    margin: 10px; 
+.photo-container {
+    flex: 0 0 calc(16.66% - 30px); /* Set to 16.66% for six equal-sized photos */
+    max-width: 16.66%;
+    text-align: center;
+    margin: 20px; /* Increase margin to space photos further apart */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.photo-container img {
+    width: 100%; /* Set a fixed width for all images */
+    height: auto; /* Maintain the aspect ratio */
+    border: 3px solid #8CB03E;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.photo-container p.caption {
+    margin-top: 5px;
+}
+
 
 .photos img:hover {
     transform: scale(1.05); 
 }
+
+.transactions {
+    text-align: center; 
+    margin: 0 auto; 
+    max-width: 50%; 
+    padding: 20px; 
+}
+
+.transactions img {
+    width: 100%;
+    height: auto;
+    border: 3px solid #8CB03E;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 15px;
+}
+
+.transactions p.caption {
+    margin-top: 5px;
+}
+
+.transactions img:hover {
+    transform: scale(1.05); 
+}
+
+.background-image {
+    background-image: url('hobbies/img/flowerBackground.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  
+}
+
+
+
+
+
+
+
