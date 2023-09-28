@@ -1,0 +1,64 @@
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+
+nav {
+    background-color: #2E2E2E;
+    color: #FFF;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #8CB03E;
+}
+
+.landing-header {
+    background-color: #8CB03E;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.landing-header h1 {
+    color: #2E2E2E; 
+    font-size: 36px;
+}
+
+
+.content {
+    max-width: 1000px; 
+    margin: 0 auto;
+    padding: 40px;
+    text-align: center;
+}
+
+.content h2 {
+    color: #2E2E2E;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    color: #444;
+    font-size: 18px;
+    margin-top: 20px;
+}
