@@ -70,22 +70,10 @@ body, h1, h2, p, ul, li {
     font-size: 18px;
     }
     
-    
+    .gif {
+        text-align: center;
+    }
 
-    .branding {
-    text-align: center;
-    margin-top: 40px;
-    }
-    
-    .background-image {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: auto;
-        z-index: -1;
-    }
-    
     
     
     

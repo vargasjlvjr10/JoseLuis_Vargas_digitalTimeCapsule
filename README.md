@@ -17,3 +17,6 @@ HTML will be used to structure the pages, create links, and embed media elements
 ## Acknowledgment
 
 https://www.w3schools.com/cssref/sel_hover.php
+https://www.w3schools.com/tags/tag_div.ASP
+https://www.w3schools.com/css/css3_object-fit.asp
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/

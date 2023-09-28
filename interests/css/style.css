@@ -1,9 +1,7 @@
-
-body, h1, h2, p, ul, li {
+body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
 }
-
 
 nav {
     background-color: #2E2E2E;
@@ -33,7 +31,6 @@ nav a:hover {
     color: #8CB03E;
 }
 
-
 .landing-header {
     background-color: #8CB03E; 
     text-align: center;
@@ -45,7 +42,6 @@ nav a:hover {
     font-size: px;
 }
 
-
 .content {
     max-width: 1000px; 
     margin: 0 auto;
@@ -53,7 +49,7 @@ nav a:hover {
     text-align: center;
 }
 
-.content h2 {
+.content h2, h3 {
     color: #2E2E2E; 
     font-size: 24px;
     margin-bottom: 20px;
@@ -86,62 +82,76 @@ nav a:hover {
     transform: scale(1.05); 
 }
 
-/* Add styles for the "fitness" class */
-.fitness {
-    display: flex;
-    flex-direction: column; /* Stack images vertically */
-    align-items: center;
-    margin-top: 20px; /* Add some top margin for spacing */
-}
-
-.fitness img {
-    max-width: 35%; /* Adjust the size of the images */
-    height: auto;
-    border: 3px solid #8CB03E; /* Add green borders */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-    margin: 30px 0; /* Add some vertical margin between images */
-}
-
-.fitness img:hover {
-    transform: scale(1.05); /* Hover effect to scale up the images */
-}
-
-
-
-/* Keep your existing CSS for .fitness class */
-
-.image-container {
-    display: flex;
-    justify-content: center; /* Horizontally center the content */
-    align-items: center; /* Vertically center the content */
-}
-
 .insects img {
     margin-top: 20px;
 }
-/* Keep your existing CSS for .fitness class */
 
 .insects img {
-    max-width: 50px; /* Adjust the size of the image (smaller) */
+    max-width: 50px;
     height: auto;
-    margin-left: 10px; /* Add some margin to separate it from the "Rings" image */
+    margin-left: 10px;
 }
 
-/* Style for left and right images */
-.left-image, .right-image {
-    max-width: 50px; /* Adjust the size of the images (smaller) */
+.fitness-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.fitness {
+    flex: 0 0 calc(33.33% - 40px);
+    text-align: center;
+    margin: 0 20px;
+}
+
+.fitness img {
+    max-width: 100%;
     height: auto;
-    margin-top: 10px; /* Add some top margin for spacing */
+    border: 3px solid #8CB03E;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
 }
 
-/* Positioning for left and right images */
-.left-image {
-    float: left; /* Float the left image to the left */
-    margin-right: 10px; /* Add some margin to separate it from the "Rings" image */
+.fitness img:hover {
+    transform: scale(1.05);
 }
 
-.right-image {
-    float: right; /* Float the right image to the right */
-    margin-left: 10px; /* Add some margin to separate it from the "Rings" image */
+.centered-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
 }
+
+.centered-text p {
+    color: #444;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.friendpost img {
+    max-width: 45%;
+    height: auto;
+    border: 3px solid #8CB03E;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    margin: 0 30px;
+}
+
+.friendpost a {
+    display: block; 
+    margin-top: 20px; 
+    margin-bottom: 20px;
+}
+
+.friendpost img:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+
